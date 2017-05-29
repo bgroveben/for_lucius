@@ -11,20 +11,26 @@
     <link href="jquery.bxslider.css" rel="stylesheet" />
   </head>
   <body>
-    <ul class="slider1">
-      <li><img src="images/images/lucius0.jpg" /></li>
+    <ul id="slider1">
       <li><img src="images/images/lucius1.jpg" /></li>
+      <li><img src="images/images/fond_farewell1.png" /></li>
+      <li><img src="images/images/lucius5.jpg" /></li>
+      <li><img src="images/images/fond_farewell2.png" /></li>
+    </ul>
+    <ul id="slider2">
+      <li><img src="images/images/lucius0.jpg" /></li>
       <li><img src="images/images/lucius2.jpg" /></li>
       <li><img src="images/images/lucius3.jpg" /></li>
       <li><img src="images/images/lucius4.jpg" /></li>
-      <li><img src="images/images/lucius5.jpg" /></li>
       <li><img src="images/images/lucius6.jpg" /></li>
       <li><img src="images/images/lucius7.jpg" /></li>
       <li><img src="images/images/lucius8.jpg" /></li>
       <li><img src="images/images/lucius9.jpg" /></li>
       <li><img src="images/images/luciusA.jpg" /></li>
-      <li><img src="images/images/luciusB.jpg" /></li>
       <li><img src="images/images/luciusC.jpg" /></li>
+      <li><img src="images/images/luciusB.jpg" /></li>
+      <li><img src="images/images/lucius1.jpg" /></li>
+      <li><img src="images/images/lucius5.jpg" /></li>
     </ul>
   </body>
   <!--
@@ -36,11 +42,27 @@
   -->
   <script>
     $(document).ready(function(){
+      /*
       $('.slider1').bxSlider({
         slideWidth: 335,
         minSlides: 2,
         maxSlides: 4,
         slideMargin: 10
+      });
+      */
+      $('#slider1').bxSlider({
+        slideWidth: 325,
+        minSlides: 4,
+        maxSlides: 4,
+        slideMargin: 50,
+      });
+
+      $('#slider2').bxSlider({
+        slideWidth: 335,
+        minSlides: 2,
+        maxSlides: 4,
+        slideMargin: 20,
+        pause: 8000
       });
     });
   </script>
