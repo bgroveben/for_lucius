@@ -3,108 +3,45 @@
   <head>
     <meta charset='utf-8'>
     <title>Lucius</title>
-    <link href='style.css' rel='stylesheet'>
+    <!-- jQuery library (served from Google) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="jquery.bxslider.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="jquery.bxslider.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="slideshow-container">
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 13</div>
-        <img src="images/lucius0.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 13</div>
-        <img src="images/lucius1.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 13</div>
-        <img src="images/lucius2.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">4 / 13</div>
-        <img src="images/lucius3.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">5 / 13</div>
-        <img src="images/lucius4.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">6 / 13</div>
-        <img src="images/lucius5.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">7 / 13</div>
-        <img src="images/lucius6.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">8 / 13</div>
-        <img src="images/lucius7.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">9 / 13</div>
-        <img src="images/lucius8.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">10 / 13</div>
-        <img src="images/lucius9.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">11 / 13</div>
-        <img src="images/luciusA.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">12 / 13</div>
-        <img src="images/luciusB.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">13 / 13</div>
-        <img src="images/luciusC.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
-
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-      <span class="dot" onclick="currentSlide(6)"></span>
-      <span class="dot" onclick="currentSlide(7)"></span>
-      <span class="dot" onclick="currentSlide(8)"></span>
-      <span class="dot" onclick="currentSlide(9)"></span>
-      <span class="dot" onclick="currentSlide(10)"></span>
-      <span class="dot" onclick="currentSlide(11)"></span>
-      <span class="dot" onclick="currentSlide(12)"></span>
-      <span class="dot" onclick="currentSlide(13)"></span>
-    </div>
-    <script src='script.js'></script>
+    <ul class="slider1">
+      <li><img src="images/images/lucius0.jpg" /></li>
+      <li><img src="images/images/lucius1.jpg" /></li>
+      <li><img src="images/images/lucius2.jpg" /></li>
+      <li><img src="images/images/lucius3.jpg" /></li>
+      <li><img src="images/images/lucius4.jpg" /></li>
+      <li><img src="images/images/lucius5.jpg" /></li>
+      <li><img src="images/images/lucius6.jpg" /></li>
+      <li><img src="images/images/lucius7.jpg" /></li>
+      <li><img src="images/images/lucius8.jpg" /></li>
+      <li><img src="images/images/lucius9.jpg" /></li>
+      <li><img src="images/images/luciusA.jpg" /></li>
+      <li><img src="images/images/luciusB.jpg" /></li>
+      <li><img src="images/images/luciusC.jpg" /></li>
+    </ul>
   </body>
+  <!--
+  <script>
+    $(document).ready(function(){
+      $('.bxslider').bxSlider();
+    });
+  </script>
+  -->
+  <script>
+    $(document).ready(function(){
+      $('.slider1').bxSlider({
+        slideWidth: 335,
+        minSlides: 2,
+        maxSlides: 4,
+        slideMargin: 10
+      });
+    });
+  </script>
 </html>
