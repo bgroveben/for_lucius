@@ -6,4 +6,6 @@ This site uses a jQuery plugin called [bxslider](https://github.com/stevenwander
 
 For complete documentation, tons of examples, and a good time, visit:
 
-[http://bxslider.com](http://bxslider.com)  
+[http://bxslider.com](http://bxslider.com)
+
+### [Alternative site](https://for-lucius.000webhostapp.com/) courtesy of [000webhost](https://www.000webhost.com/members/website/list)  
